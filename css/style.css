@@ -56,6 +56,7 @@ select {
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 170px 0;
   margin: 0 0 30px 0;
 }
@@ -76,6 +77,48 @@ select {
   font-weight: 400;
 }
 
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .header {
+    padding: 130px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 767px;
+  }
+
+  .header {
+    padding: 100px 0;
+  }
+  .header__wrapper h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 567px;
+  }
+
+  .header {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .header__wrapper h1 {
+    font-size: 34px;
+  }
+}
 .content__top h2, .content__top p {
   margin: 0;
   padding: 0;
@@ -107,6 +150,41 @@ select {
   text-decoration: none;
 }
 
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 567px;
+  }
+
+  .content {
+    text-align: center;
+  }
+  .content h2 {
+    font-size: 24px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .content__bottom p {
+    margin: 20px 0 70px 0;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
 .footer {
   background-color: rgba(200, 200, 200, 0.3);
 }
@@ -138,4 +216,51 @@ select {
 }
 .footer__wrapper ul li a {
   text-decoration: none;
+}
+
+@media (max-width: 1250px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 567px;
+  }
+
+  .footer {
+    padding: 15px 0;
+  }
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer__wrapper p {
+    color: #ccc;
+    padding: 20px 0 0 0;
+  }
+  .footer__wrapper ul {
+    margin: 0;
+    padding: 0;
+  }
+  .footer__wrapper ul li:not(:last-child) {
+    padding-right: 10px;
+  }
+  .footer__wrapper ul li a {
+    text-decoration: none;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
 }
